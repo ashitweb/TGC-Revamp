@@ -1,0 +1,883 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+.pc{
+    display: flex;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(16, 15, 76, 1), rgba(12,14,43, 1));
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    font-family: sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid #312A57;
+}
+
+.call{
+    padding: 10px 30px;
+    
+    border-radius: 5px;
+    border-color: #fff;
+    color: #fff;
+    background-color: #0C0E2B;
+    font-size: large;
+}
+
+.call:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+body{
+    
+}
+
+
+.mobile{
+    display: none;
+}
+
+body{
+        font-family: sans-serif;
+}
+
+header h2{
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+nav.pc-menu ul{
+    display: flex;
+    gap: 35px;
+}
+
+ul li{
+    list-style-type: none;
+    
+    
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+li i{
+    color: #fff;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    height: 100px;
+    margin-top: 10px;
+    padding-left: 2px;
+    font-family: sans-serif;
+   
+   
+}
+
+
+.dropdown-content a {
+    color: #000;
+    background-color: #fff;
+    width: 300px;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    font-size: 16px;
+    font-family: sans-serif;
+    
+    border-bottom: 1px solid blue;
+    
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.first{
+    display: flex;
+    background-image: linear-gradient(to right, rgba(16, 15, 76, 1), rgba(12,14,43, 1));
+justify-content: space-between;
+}
+
+.text{
+    max-width: 600px ;
+}
+
+.text h1{
+    font-size: 70px;
+    font-family: sans-serif;
+}
+
+.text p{
+    font-size: 20px;
+    font-family: sans-serif;
+    max-width: 500px;
+}
+
+
+
+.bnrimg{
+    position: relative;
+}
+
+.banner-image{
+    border-top-left-radius:200px ;
+    border-top-right-radius: 200px;
+    margin-top: 40px;
+}
+
+.review{
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    animation-name: reviews;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-play-state: paused;      
+    animation-iteration-count: infinite;
+
+border-radius: 10px;
+    top:250px;
+    left: 0px;
+    right: 50px;
+    background-color: #fff;
+    
+}
+
+
+.review:hover {
+    animation-play-state: running;
+}
+
+@keyframes reviews {
+    0%   { left:0px; top:250px;}
+    
+    50%  { left:0px; top:220px;}
+    75%  { left:0px; top:250px;}
+    100% { left:0px; top:250px;}
+  }
+
+.fa-star{
+    color: #FFA41B;
+}
+
+
+.featured{ 
+    width: 100%;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+
+.brands{
+    width: 80%;
+}
+
+.brands img{
+    margin-right: 65px;
+    
+}
+
+.course h2{
+    text-align: center;
+    margin-top: 150px;
+    font-family: sans-serif;
+}
+
+.courses{
+    
+
+
+}
+
+.course-section{
+    background-image: linear-gradient( rgba(21, 19, 58, 1), rgb(16,17,51));
+    padding: 50px 0;
+    
+}
+
+.course{
+    font-family: sans-serif;
+}
+
+.course-card{
+    
+    text-align: center;
+    border-radius: 10%;
+    height: 300px;
+    padding-top: 50px;
+
+}
+
+
+.course-card:hover {
+    transform: scale(1.05);
+    background-color: #0D6EFD;
+}
+
+
+
+
+
+
+.heading h4{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.heading p{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.course-btn{
+    width: 300px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+footer{
+    background-image: linear-gradient(to right, rgba(16, 15, 76, 1), rgba(12,14,43, 1));
+    font-family: sans-serif;
+    color: #595B7F;
+    
+}
+
+.smm i{
+    font-size: 30px;
+ 
+}
+
+.about{
+    width: 250px;
+    line-height: 1.5;
+    
+    
+}
+
+.our-links ul{
+    text-decoration: none;
+    text-align: start;
+    line-height: 2.5;
+}
+
+.our-links ul :hover{
+    text-decoration: underline ;
+    line-height: 2.2;
+    text-decoration-style: double ;
+    color: #0D6EFD;
+}
+
+footer h4{
+    text-align: center;
+    color: #595B7F;
+    
+}
+
+.newsletter{
+    width: 300px;
+    color: #595B7F;
+    
+}
+
+.input input{
+    border: none;
+    padding: 7px 7px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.modules{
+    line-height: 2.5;
+    
+}
+
+
+.modules ul :hover{
+    text-decoration: underline ;
+    color: #0D6EFD;
+    line-height: 2.2;
+    text-decoration-style: double ;
+}
+
+.reasons-section{
+    padding: 50px 0;
+    background-image: linear-gradient( rgba(21, 19, 58, 1), rgb(16,17,51));
+}
+
+.reasons{
+margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.reason-card{
+    max-width: 350px;
+    height: 300px;
+    background-color: #0C0E2B;
+    border-radius: 30px;
+    padding-top: 40px;
+    line-height: 2;
+    border: 2px solid #2d2d2c;
+}
+
+
+.reason-card:hover {
+    transform: scale(1.05);
+    
+    
+
+}
+
+
+.reason-one:hover{
+      border: 1px solid #a9f44d;
+}
+
+.reason-two:hover{
+    border: 1px solid #f27d10;
+}
+
+.reason-three:hover{
+    border: 1px solid #f5294e;
+}
+
+.reason-card h3{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.testimonial{
+    padding: 50px 0;
+    background-image: linear-gradient( rgba(21, 19, 58, 1), rgb(16,17,51));
+}
+
+.testimonial img{
+    border-radius: 50%;
+}
+
+
+.carousel h2{
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.carousels{
+    padding: 0 200px;
+    line-height: 2;
+    text-align: center;
+
+}
+
+.carousels h4{
+    margin-top: 50px;
+}
+
+
+.faqs{
+    background-image: linear-gradient(to right, rgba(23,15,47, 1), rgb(10, 12, 35));
+    padding: 50px 0;
+
+}
+
+.accordianone{
+    width: 600px;
+    color: #fff;
+}
+
+
+.readys{
+    background-image: url(Images/enquirybg.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.enquiry-section{
+    background-image: url(Images/enquirybg.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.enquiry{
+    line-height: 1.5;
+}
+
+form{
+    max-width: 450px;
+    background-color: #17093E;
+    
+}
+
+
+
+.enquiry-text{
+    max-width: 500px;
+    line-height: 2;
+}
+
+.enquiry-text p{
+    margin: 30px 0;
+}
+
+.enquiry-text h6{
+    margin: 20px 0;
+}
+
+.enquiry-text i{
+    font-size: 35px;
+    color: #fff;
+    transition: font-size 2s;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+
+.inner{
+    padding: 20px 10px;
+    width: 400px;
+    background-color: #17093E;
+    color: #fff;
+}
+
+.inner:hover{
+    transform: scale(1.1);
+}
+
+
+.placement-partner{
+    background-image: linear-gradient(to right, rgba(23,15,47, 1), rgb(10, 12, 35));
+    padding: 50px 0;
+}
+
+
+.title_underline{
+    text-decoration: underline;
+  text-decoration-color: #F2277E;
+  text-decoration-thickness: 5px ;
+  
+  
+
+}
+
+@media only screen and (max-width: 540px) {
+
+header.mobile {
+    display: block;
+    background-image: linear-gradient(to right, rgba(16, 15, 76, 1), rgba(12,14,43, 1));
+    
+}
+
+.pc{
+    display: none;
+}
+
+.mobile-menu ul li{
+    padding: 10px;
+    padding: 10px 10px;
+    border: 1px solid #464646;
+    border-radius: 15px;
+   
+    
+    
+}
+
+.mobile-menu ul li a{
+    color: #000;
+    
+    
+}
+
+.left{
+line-height: 1.5;
+
+}
+
+
+    .first h1{
+        font-size: 45px;
+        width: 300px;
+    }
+
+    .first p{
+        width: 300px;
+    }
+
+    .buttons button{
+        margin-bottom: 20px;
+    }
+
+.bnrimg{
+    display: none;
+}
+
+.course h2{
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.heading h4{
+    font-size: 24px;
+}
+
+.heading p{
+    font-size: 20px;
+}
+
+
+.enquiry{
+    flex-direction: column;
+    
+}
+
+.enquiry h2{
+    font-size: 32px;
+    
+    text-align: center;
+}
+
+.enquiry p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.outer{
+    flex-wrap: wrap;
+}
+
+.inner{
+    padding: 10px 10px;
+    
+}
+
+.inner h6{
+    font-size: 17px;
+}
+
+
+
+form h3{
+    
+    
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+
+form p{
+    font-size: 20px;
+
+}
+
+.form-label{
+    font-size: 20px;
+}
+.testimonial{
+    padding: 50px 0;
+}
+
+.testimonial h2{
+    font-size: 32px;
+}
+
+
+.featured{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    display: none;
+}
+
+.featured h4{
+    font-size: 32px;
+}
+
+.brands img{
+    margin-bottom: 20px;
+}
+
+    .carousels{
+        padding: 0;
+        text-align: center;
+        
+    
+    }
+    
+    .carousels img{
+        padding-left: 30px;
+
+    }
+    
+    .reasons{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .reasons h2{
+        font-size: 32px;
+    }
+
+
+    .reasons h4{
+        font-size: 24px;
+    }
+    
+    .reasons p{
+        font-size: 18px;
+        
+    }
+
+    .main{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .main p{
+        font-size: 18px;
+        line-height: 1.7;
+        margin: 15px 0;
+    }
+
+    .our-links h4{
+        font-size: 32px;
+
+    }
+
+    .newsletter h4{
+
+        font-size: 32px;
+        text-align: center;
+
+    }
+
+.modules ul{
+    text-align: start;
+
+}
+
+    .modules h4{
+        font-size: 32px;
+
+    }
+
+.input button{
+    margin: 20px;
+
+}
+
+.smm{
+
+    justify-content: center;
+    
+}
+
+}
+
+@media only screen and (max-width: 1140px) {
+
+   
+    
+    .left{
+    line-height: 1.5;
+    
+    }
+    
+    
+    
+        .first h1{
+            font-size: 45px;
+            
+        }
+    
+    
+        .buttons button{
+            margin-bottom: 20px;
+        }
+    
+    
+        .course-section{
+            padding: 10px 0;
+            
+        }
+    
+    .course h2{
+        font-size: 32px;
+        line-height: 1.5;
+    }
+    
+    .heading h4{
+        font-size: 24px;
+    }
+    
+    .heading p{
+        font-size: 20px;
+    }
+    
+    
+    
+    
+    .enquiry h2{
+        font-size: 32px;
+        
+        text-align: center;
+    }
+    
+    .enquiry p{
+        font-size: 16px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .outer{
+        flex-wrap: wrap;
+    }
+    
+    .inner{
+        padding: 10px 10px;
+        
+    }
+    
+    .inner h6{
+        font-size: 17px;
+    }
+    
+    
+    
+    form h3{
+        
+        
+        text-align: center;
+        line-height: 1.5;
+        
+    }
+    
+    
+    form p{
+        font-size: 20px;
+    
+    }
+    
+    .form-label{
+        font-size: 20px;
+    }
+    .testimonial{
+        padding: 50px 0;
+    }
+    
+    .testimonial h2{
+        font-size: 32px;
+    }
+    
+    
+    .featured{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        display: none;
+    }
+    
+    .featured h4{
+        font-size: 32px;
+    }
+    
+    .brands img{
+        margin-bottom: 20px;
+    }
+    
+        .carousels{
+            padding: 0;
+            text-align: center;
+            
+        
+        }
+        
+        .carousels img{
+            padding-left: 30px;
+    
+        }
+       
+        .reason-card{
+            width: 350px;
+            padding: 10px;
+            line-height: 2;
+    
+
+         .reason-card img{
+            margin-bottom: 30px;
+         }
+            
+        .main{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            
+        }
+    
+        .main p{
+            font-size: 18px;
+            line-height: 1.7;
+            margin: 15px 0;
+        }
+    
+        .our-links h4{
+            font-size: 32px;
+    
+        }
+    
+        .newsletter h4{
+    
+            font-size: 32px;
+            text-align: center;
+    
+        }
+    
+    .modules ul{
+        text-align: start;
+    
+    }
+    
+        .modules h4{
+            font-size: 32px;
+    
+        }
+    
+    .input button{
+        margin: 20px;
+    
+    }
+    
+    .smm{
+    
+        justify-content: center;
+        
+    }
+    
+}
+}
+    
+
