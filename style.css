@@ -401,7 +401,7 @@ margin-top: 80px;
 
 
 .readys{
-    background-image: url(Images/enquirybg.jpg);
+    background-image: url( enquirybg.jpg);
     background-position: center center;
     background-repeat: repeat;
     background-size: cover;
@@ -409,7 +409,7 @@ margin-top: 80px;
 }
 
 .enquiry-section{
-    background-image: url(Images/enquirybg.jpg);
+    background-image: url( enquirybg.jpg);
     background-position: center center;
     background-repeat: repeat;
     background-size: cover;
